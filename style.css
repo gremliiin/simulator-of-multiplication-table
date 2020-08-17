@@ -1,13 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url("./img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;
     font-family: 'arial', 'Comic Sans MS';
 }
 
@@ -32,12 +29,22 @@ body{
     line-height: 21px;
 }
 
+.container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+}
+
 .programm{
     display: block;
     width: 500px;
     height: 300px;
-    margin-left: 90%;
-    margin-top: 20%;
+    margin: 0 auto;
+    margin-top: 150px;
     background-image: url("./img/background-programm.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -53,8 +60,10 @@ body{
     padding: 20px;
 }
 
-.input{
+.input input{
     display: block;
+    padding: 5px;
+    font-size: 14px;
 }
 
 .input_value{
